@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background: #000;
+}
+/* background image */
+.main{
+    background-image: url(assets/image/bg.jpg);
+    background-position: center center;
+    background-size: max(1900px,100vw);
+    background-repeat:no-repeat;
+    height: 90vh;
+    top: 0;
+    position: relative;
+}
+.main .box{
+    height: 90vh;
+    width: 100%;
+    opacity: 0.64;
+    position: absolute;
+    top:0;
+    background-color: #000;
+}
+nav{
+    display: flex;
+    max-width: 160vh;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+/* Netflix logo */
+nav img{
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+/* English & sign In button  */
+nav button{
+    position: relative;
+    z-index: 10;
+    margin: 0 10px 0 10px;
+}
+.hero{
+    font-family: "Martel Sans", sans-serif;
+    height: calc(100% - 62px);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    padding: 0 30px;
+    text-align: center;
+}
+/* 1st text */
+.hero> :first-child{
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+/* 2nd text */
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+/* 3rd text */
+.hero :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+/* Gray Line Seperation */
+.separation{
+    height: 6px;
+    background-color: rgb(30, 30, 30);
+}
+/* English & sign In button  */
+.btn{
+    padding: 8px 22px;
+    color: white;
+    background-color: rgba(25, 25, 25, 0.5);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.eng{
+    border: 1px solid white;
+}
+.eng:hover{
+    border: 1px solid rgb(146, 146, 146);
+}
+.btn-red{
+    background: red;
+    color: white;
+    padding: 10px 25px 10px 25px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: 1px solid red;
+}
+.btn-red:hover{
+    background: rgb(150, 0, 0);
+    color: white;
+    padding: 10px 25px 10px 25px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: 1px solid rgb(150, 0, 0);   
+}
+.btn-red-sn{
+    background: red;
+    color: white;
+    border: 1px solid red;   
+}
+.btn-red-sn:hover{
+    background: rgb(150, 0, 0);
+    color: white;
+    border: 1px solid rgb(150, 0, 0);   
+}
+/* E-mail with get start */
+.hero-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+/* E-mail Input */
+.main input{
+    padding: 10px 48px 10px 30px;
+    font-weight: 900;
+    font-size: 20px;
+    border: 2px solid rgba(255, 255, 255,0.5);
+    border-radius: 4px;
+    background-color: rgba(25, 25, 25,0.2);
+    color: white;
+}
+.main input:hover{
+    padding: 10px 48px 10px 30px;
+    font-weight: 900;
+    font-size: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.799);
+    border-radius: 4px;
+    background-color: rgba(25, 25, 25,0.2);
+    color: white;
+}
+/* Section 1st text with video play */
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    height: 80vh;
+    margin: auto;
+    margin-top: 8px;
+    color: white;
+}
+/* video play */
+.secImg{
+    position: relative;
+}
+.secImg img{
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+.secImg video{
+    width: 473px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    margin-right: 8px;
+}
+section.first >div{
+    display: flex;
+    flex-direction: column;
+}
+section.first >div :first-child{
+    font-size: 48px;
+    font-weight: bolder;
+}
+section.first >div :nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+}
+/* Section 2nd text with video play */
+.second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    height: 80vh;
+    margin: auto;
+    margin-top: 8px;
+    color: white;
+}
+/* Image of girls */
+.sec2Img{
+    position: relative;
+}
+.sec2Img img{
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+/*  Stranger Downloading  */
+
+
+
+
+section.second >div{
+    display: flex;
+    flex-direction: column;
+}
+section.second >div :first-child{
+    font-size: 48px;
+    font-weight: bolder;
+}
+section.second >div :nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+}
+/* Section 3rd text with video play */
+.third{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    height: 80vh;
+    margin: auto;
+    margin-top: 8px;
+    color: white;
+}
+/* video play */
+.sec3Img{
+    position: relative;
+}
+.sec3Img img{
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+.sec3Img video{
+    width: 370px;
+    position: absolute;
+    top: 30px;
+    right: 96px;
+}
+section.third >div{
+    display: flex;
+    flex-direction: column;
+}
+section.third >div :first-child{
+    font-size: 48px;
+    font-weight: bolder;
+}
+section.third >div :nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+}
+/* Section 4th text with video play */
+.fourth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    height: 80vh;
+    margin: auto;
+    margin-top: 8px;
+    color: white;
+}
+/* Image */
+.sec4Img{
+    position: relative;
+}
+.sec4Img img{
+    width: 555px;
+    padding-top: 60px;
+    position: relative;
+    z-index: 10;
+}
+section.fourth >div{
+    display: flex;
+    flex-direction: column;
+}
+section.fourth >div :first-child{
+    font-size: 48px;
+    font-weight: bolder;
+}
+section.fourth >div :nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+}
+/* Section 5th with ask question */
+.fifth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    height: 80vh;
+    margin: auto;
+    margin-top: 8px;
+    color: white;
+}
+section.fifth >div :first-child{
+    font-size: 48px;
+    font-weight: bolder;
+    margin: 200px;
+}
+section.fifth >div .Questions{
+    background: rgb(50, 50, 50);
+    text-align: left;
+    padding: 20px 20px 20px 40px;
+    margin: 10px;
+    font-size: 23px;
+}
+section.fifth >div .lower{
+    font-size: 20px;
+    margin-top: 200px;
+    margin: 200px;
+}
+/* Section 6th with footer */
+.sixth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    height: 70vh;
+    margin: auto;
+    margin-top: 8px;
+    color: white;
+}
